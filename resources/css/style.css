@@ -1,0 +1,65 @@
+/*
+  Styles for the Colmar Academy project
+
+  Claude Catonio
+  5 august 2017 : top bar added
+ */
+
+/* ------------------------------------------------------------------- */
+/* Global styles                                                       */
+/* ------------------------------------------------------------------- */
+html {
+    font-size: 16px;
+}
+
+/* ------------------------------------------------------------------- */
+/* Top bar                                                             */
+/* ------------------------------------------------------------------- */
+.topBar {
+    background-color: white;
+    height: 4rem;
+    margin: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 3rem;
+}
+
+.logo span {
+    font-size: 1.5rem;
+}
+
+.logo span:nth-child(2n+0) {
+    font-weight: bold;
+    color: #444444;
+}
+
+.logo span:last-child {
+    color: gray;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    margin-left: 1rem;
+    font-size: 1.25rem;
+}
+
+/* ------------------------------------------------------------------- */
+/* Top bar                                                             */
+/* ------------------------------------------------------------------- */
+.banner {
+    height: 10rem;
+    background: lightgray;
+}
