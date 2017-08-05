@@ -57,9 +57,45 @@ nav a {
 }
 
 /* ------------------------------------------------------------------- */
-/* Top bar                                                             */
+/* Top banner                                                          */
 /* ------------------------------------------------------------------- */
 .banner {
-    height: 10rem;
     background: lightgray;
+    display: flex;
+    padding: 2rem 1.5rem;
+}
+
+.banner img {
+    width: 60%;
+}
+
+.banner .jumbotron {
+    margin-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner .jumbotron * {
+    margin-bottom: 1.5rem;
+}
+
+.banner .jumbotron h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #444444;
+}
+
+.banner .jumbotron h2 {
+    font-size: 2rem;
+    color: #444444;
+}
+
+.banner .jumbotron .button {
+    width: 100%;
+    background-color: #444444;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    padding: 0.5rem 0;
 }
