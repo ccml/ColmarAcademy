@@ -10,6 +10,25 @@
 /* ------------------------------------------------------------------- */
 html {
     font-size: 16px;
+    color: #444444;
+}
+
+a {
+    color: #444444;
+}
+
+.containerLeft {
+    width: 60%;
+    padding: 2rem 1.5rem;
+}
+
+.containerRight {
+    width: 40%;
+    padding: 2rem 1.5rem 2rem 0;
+}
+
+img {
+    width: 100%;
 }
 
 /* ------------------------------------------------------------------- */
@@ -39,7 +58,6 @@ html {
 
 .logo span:nth-child(2n+0) {
     font-weight: bold;
-    color: #444444;
 }
 
 .logo span:last-child {
@@ -62,40 +80,113 @@ nav a {
 .banner {
     background: lightgray;
     display: flex;
-    padding: 2rem 1.5rem;
 }
 
-.banner img {
-    width: 60%;
-}
-
-.banner .jumbotron {
-    margin-left: 1.5rem;
+.jumbotron {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 100%;
 }
 
-.banner .jumbotron * {
+.jumbotron * {
     margin-bottom: 1.5rem;
 }
 
-.banner .jumbotron h1 {
+.jumbotron h1 {
     font-size: 3rem;
     font-weight: bold;
-    color: #444444;
 }
 
-.banner .jumbotron h2 {
+.jumbotron h2 {
     font-size: 2rem;
-    color: #444444;
 }
 
-.banner .jumbotron .button {
+.jumbotron .button {
     width: 100%;
     background-color: #444444;
     font-size: 1.5rem;
     color: white;
     text-align: center;
     padding: 0.5rem 0;
+}
+
+/* ------------------------------------------------------------------- */
+/* The introduction section                                            */
+/* ------------------------------------------------------------------- */
+.introduction {
+    display: flex;
+    background-color: #eeeeee;
+}
+
+.practice h1 {
+    margin: 2rem 0 1.5rem 0;
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+
+.practice h2 {
+    color: gray;
+}
+
+.practice .author {
+    margin-top: 2rem;
+}
+
+.introduction .containerRight {
+    border-left-width: 1px;
+    border-color: lightgray;
+    border-style: solid;
+}
+
+.informationList {
+    display: flex;
+    flex-direction: column;
+}
+
+.informationList .information {
+    margin-right: -1.5rem;
+    padding: 1rem;
+    display: flex;
+    border-bottom-width: 1px;
+    border-color: lightgray;
+    border-style: solid;
+}
+
+.informationList .information:first-child {
+    padding: 0rem 0 1rem 1rem;
+}
+
+.informationList .information:last-child {
+    background-color: lightgray;
+}
+
+.informationList .information img {
+    width: 35%;
+}
+
+.informationList .information div {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.informationList .information div * {
+    margin-bottom: 1rem;
+}
+
+.informationList .information div h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.informationList .information div p {
+    font-size: 1rem;
+    color: gray;
+}
+
+.informationList .information div a {
+    font-size: 1rem;
+    color: cornflowerblue;
 }
