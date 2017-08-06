@@ -148,6 +148,7 @@ nav a {
     margin-right: -1.5rem;
     padding: 1rem;
     display: flex;
+	align-items: center;
     border-bottom-width: 1px;
     border-color: lightgray;
     border-style: solid;
@@ -189,4 +190,46 @@ nav a {
 .informationList .information div a {
     font-size: 1rem;
     color: cornflowerblue;
+}
+
+/* ------------------------------------------------------------------- */
+/* The learn section                                                   */
+/* ------------------------------------------------------------------- */
+.learn {
+	background-color: lightgray;	
+}
+
+.learn h1 {
+	padding-top: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+	text-align: center;
+}
+
+.learnCategories {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 0 3.75rem;
+}
+
+.learnCategory {
+    min-width: 20%;
+	max-width: 28%;
+	margin: 2rem 1rem;
+	background-color: white;
+}
+
+.learnDescription {
+	padding: 1rem;
+}
+
+.learnDescription h2 {
+    font-size: 1.25rem;
+	font-weight: bold;
+}
+
+.learnDescription h3 {
+    font-size: 1rem;
+	margin: 8px 0;
 }
