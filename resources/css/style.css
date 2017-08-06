@@ -27,8 +27,62 @@ a {
     padding: 2rem 1.5rem 2rem 0;
 }
 
-img {
+img, video {
     width: 100%;
+}
+
+/* The information block style                                         */
+/*     used in the introduction section and the these exhibit section  */
+
+.leftInformation h1 {
+    margin: 2rem 0 1.5rem 0;
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+
+.leftInformation h2 {
+    color: gray;
+}
+
+.leftInformation .author {
+    margin-top: 2rem;
+}
+
+.information {
+    margin-right: -1.5rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.information img {
+    width: 35%;
+}
+
+.information div {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.information div * {
+    margin-bottom: 1rem;
+}
+
+.information div h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.information div p {
+    font-size: 1rem;
+    color: gray;
+}
+
+.information div a {
+    font-size: 1rem;
+    color: cornflowerblue;
 }
 
 /* ------------------------------------------------------------------- */
@@ -119,20 +173,6 @@ nav a {
     background-color: #eeeeee;
 }
 
-.practice h1 {
-    margin: 2rem 0 1.5rem 0;
-    font-size: 2.25rem;
-    font-weight: bold;
-}
-
-.practice h2 {
-    color: gray;
-}
-
-.practice .author {
-    margin-top: 2rem;
-}
-
 .introduction .containerRight {
     border-left-width: 1px;
     border-color: lightgray;
@@ -145,10 +185,6 @@ nav a {
 }
 
 .informationList .information {
-    margin-right: -1.5rem;
-    padding: 1rem;
-    display: flex;
-	align-items: center;
     border-bottom-width: 1px;
     border-color: lightgray;
     border-style: solid;
@@ -160,36 +196,6 @@ nav a {
 
 .informationList .information:last-child {
     background-color: lightgray;
-}
-
-.informationList .information img {
-    width: 35%;
-}
-
-.informationList .information div {
-    margin-left: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.informationList .information div * {
-    margin-bottom: 1rem;
-}
-
-.informationList .information div h1 {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.informationList .information div p {
-    font-size: 1rem;
-    color: gray;
-}
-
-.informationList .information div a {
-    font-size: 1rem;
-    color: cornflowerblue;
 }
 
 /* ------------------------------------------------------------------- */
@@ -232,4 +238,32 @@ nav a {
 .learnDescription h3 {
     font-size: 1rem;
 	margin: 8px 0;
+}
+
+/* ------------------------------------------------------------------- */
+/* The thesis exhibit section                                          */
+/* ------------------------------------------------------------------- */
+.thesisExhibit {
+    display: flex;
+}
+
+.thesisExhibit .leftInformation h1 {
+    margin: 1.5rem 0 0.5rem 0;
+}
+
+.studies .information:first-child {
+    background-color: lightgray;
+}
+
+/* ------------------------------------------------------------------- */
+/* The footer section                                                  */
+/* ------------------------------------------------------------------- */
+footer {
+    border-top-width: 1px;
+    border-top-color: lightgray;
+    border-top-style: solid;
+    padding: 1rem 1.5rem 3rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    color: gray;
 }
