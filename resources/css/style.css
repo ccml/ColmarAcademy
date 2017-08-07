@@ -10,11 +10,16 @@
 /* ------------------------------------------------------------------- */
 html {
     font-size: 16px;
-    color: #444444;
+    color: #4a4a4a;
+	background-color: white;
 }
 
 a {
-    color: #444444;
+    color: #4a4a4a;
+}
+
+p {
+	color: #575757;
 }
 
 .containerLeft {
@@ -31,17 +36,30 @@ img, video {
     width: 100%;
 }
 
-/* The information block style                                         */
-/*     used in the introduction section and the these exhibit section  */
-
-.leftInformation h1 {
-    margin: 2rem 0 1.5rem 0;
-    font-size: 2.25rem;
+h1 {
+	font-size: 3rem;
     font-weight: bold;
 }
 
+h2 {
+	font-size:2.25rem;
+    font-weight: bold;
+}
+
+h3 {
+	font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* The information block style                                         */
+/*     used in the introduction section and the these exhibit section  */
+
 .leftInformation h2 {
-    color: gray;
+    margin: 2rem 0 1.5rem 0;
+}
+
+.leftInformation h3 {
+    margin: 1.5rem 0 0.5rem 0;
 }
 
 .leftInformation .author {
@@ -70,26 +88,15 @@ img, video {
     margin-bottom: 1rem;
 }
 
-.information div h1 {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.information div p {
-    font-size: 1rem;
-    color: gray;
-}
-
 .information div a {
     font-size: 1rem;
-    color: cornflowerblue;
+    color: #5194e3;
 }
 
 /* ------------------------------------------------------------------- */
 /* Top bar                                                             */
 /* ------------------------------------------------------------------- */
 .topBar {
-    background-color: white;
     height: 4rem;
     margin: 0 1.5rem;
     display: flex;
@@ -115,7 +122,7 @@ img, video {
 }
 
 .logo span:last-child {
-    color: gray;
+    color: #9b9b9b;
 }
 
 nav {
@@ -132,7 +139,7 @@ nav a {
 /* Top banner                                                          */
 /* ------------------------------------------------------------------- */
 .banner {
-    background: lightgray;
+    background: #d8d8d8;
     display: flex;
 }
 
@@ -145,15 +152,6 @@ nav a {
 
 .jumbotron * {
     margin-bottom: 1.5rem;
-}
-
-.jumbotron h1 {
-    font-size: 3rem;
-    font-weight: bold;
-}
-
-.jumbotron h2 {
-    font-size: 2rem;
 }
 
 .jumbotron .button {
@@ -170,12 +168,12 @@ nav a {
 /* ------------------------------------------------------------------- */
 .introduction {
     display: flex;
-    background-color: #eeeeee;
+    background-color: #f3f5f5;
 }
 
 .introduction .containerRight {
     border-left-width: 1px;
-    border-color: lightgray;
+    border-color: #d8d8d8;
     border-style: solid;
 }
 
@@ -186,7 +184,7 @@ nav a {
 
 .informationList .information {
     border-bottom-width: 1px;
-    border-color: lightgray;
+    border-color: #d8d8d8;
     border-style: solid;
 }
 
@@ -195,20 +193,18 @@ nav a {
 }
 
 .informationList .information:last-child {
-    background-color: lightgray;
+    background-color: #d8d8d8;
 }
 
 /* ------------------------------------------------------------------- */
 /* The learn section                                                   */
 /* ------------------------------------------------------------------- */
 .learn {
-	background-color: lightgray;	
+	background-color: #eaebec;	
 }
 
-.learn h1 {
-	padding-top: 2rem;
-    font-size: 2rem;
-    font-weight: bold;
+.learn h2 {
+	padding: 2rem 0;
 	text-align: center;
 }
 
@@ -222,21 +218,15 @@ nav a {
 .learnCategory {
     min-width: 20%;
 	max-width: 28%;
-	margin: 2rem 1rem;
+	margin: 0rem 1rem 2rem 0;
 	background-color: white;
 }
 
 .learnDescription {
-	padding: 1rem;
+	padding: 1rem 1rem 1.5rem 1rem;
 }
 
-.learnDescription h2 {
-    font-size: 1.25rem;
-	font-weight: bold;
-}
-
-.learnDescription h3 {
-    font-size: 1rem;
+.learnDescription p {
 	margin: 8px 0;
 }
 
@@ -244,11 +234,17 @@ nav a {
 /* The thesis exhibit section                                          */
 /* ------------------------------------------------------------------- */
 .thesisExhibit {
-    display: flex;
+    background-color: #f3f5f5;
 }
 
-.thesisExhibit .leftInformation h1 {
-    margin: 1.5rem 0 0.5rem 0;
+.thesisExhibit h2 {
+	padding: 2rem 0 0 0;
+	text-align: center;
+	width: 100%;
+}
+
+.thesisExhibitContainer {
+    display: flex;
 }
 
 .studies .information:first-child {
@@ -259,8 +255,9 @@ nav a {
 /* The footer section                                                  */
 /* ------------------------------------------------------------------- */
 footer {
+    background-color: #f3f5f5;
     border-top-width: 1px;
-    border-top-color: lightgray;
+    border-top-color: #d8d8d8;
     border-top-style: solid;
     padding: 1rem 1.5rem 3rem 1.5rem;
     display: flex;
