@@ -19,6 +19,10 @@ a {
     font-family: Lora, Georgia, Serif;
 }
 
+a:hover {
+    font-weight: bold;
+}
+
 p {
 	color: #575757;
     font-family: "Open Sans", sans-serif;
@@ -140,6 +144,10 @@ h3 {
 .logo {
     display: flex;
     align-items: center;
+}
+
+a.logoLink {
+  font-weight: normal;
 }
 
 .logo img {
@@ -316,7 +324,7 @@ nav a {
 /* The learn section                                                   */
 /* ------------------------------------------------------------------- */
 .learn {
-	background-color: #eaebec;	
+	background-color: #eaebec;
 }
 
 .learn h2 {
@@ -347,14 +355,14 @@ nav a {
 }
 
 @media only screen and (max-width: 992px) {
-	
+
     .learnCategories {
 	  display: flex;
 	  flex-direction: column;
 	  justify-content: flex-start;
 	  padding: 0 1rem 2rem 1rem;
     }
-	
+
     .learnCategory {
       width: 100%;
 	  min-width: unset;
@@ -362,7 +370,7 @@ nav a {
 	  margin: 0rem 0rem 0.5rem 0;
 	  background-color: #d8d8d8;
     }
-	
+
 	.learn .desktop {
 	  display: none;
 	}
