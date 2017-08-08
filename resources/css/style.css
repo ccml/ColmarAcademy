@@ -92,18 +92,18 @@ h3 {
     display: none;
 }
 
-.information div {
+.information .infoDescription {
     margin-left: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.information div.infoDescription {
+.information .infoDescription * {
     margin-bottom: 1rem;
 }
 
-.information div.infoDescription a {
+.information .infoDescription a {
     font-size: 1rem;
     color: #5194e3;
 }
@@ -112,8 +112,14 @@ h3 {
 /* Top bar                                                             */
 /* ------------------------------------------------------------------- */
 .topBar {
+	position: fixed;
+	z-index: 5;
+	background-color: white;
+	left: 0;
+    right: 0;
+	overflow-x: hidden;
     height: 4rem;
-    margin: 0 1.5rem;
+    padding: 0 1.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -170,6 +176,7 @@ nav a {
 /* Top banner                                                          */
 /* ------------------------------------------------------------------- */
 .banner {
+	padding-top: 4rem;
     background: #d8d8d8;
     display: flex;
 }
@@ -324,7 +331,29 @@ nav a {
 }
 
 .learnDescription p {
-	margin: 8px 0;
+	margin: 0.5rem 0;
+}
+
+@media only screen and (max-width: 960px) {
+	
+    .learnCategories {
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: flex-start;
+	  padding: 0 1rem 2rem 1rem;
+    }
+	
+    .learnCategory {
+      width: 100%;
+	  min-width: unset;
+	  max-width: unset;
+	  margin: 0rem 0rem 0.5rem 0;
+	  background-color: #d8d8d8;
+    }
+	
+	.learn .desktop {
+	  display: none;
+	}
 }
 
 /* ------------------------------------------------------------------- */
@@ -348,6 +377,16 @@ nav a {
     background-color: lightgray;
 }
 
+@media only screen and (max-width: 960px) {
+  .thesisExhibit .desktop {
+	display: none;
+  }
+  .thesisExhibit .leftInformation {
+	padding-top: 1rem;
+ 	padding-bottom: 1.5rem;
+  }
+}
+
 /* ------------------------------------------------------------------- */
 /* The footer section                                                  */
 /* ------------------------------------------------------------------- */
@@ -359,5 +398,17 @@ footer {
     padding: 1rem 1.5rem 3rem 1.5rem;
     display: flex;
     justify-content: space-between;
-    color: gray;
+    color: #4a4a4a;
+}
+
+@media only screen and (max-width: 960px) {
+    footer {
+      border-top-color: transparent;
+      padding: 1rem;
+      display: block;
+      color: #4a4a4a;
+    }
+	footer .desktop {
+		display: none;
+	}
 }
